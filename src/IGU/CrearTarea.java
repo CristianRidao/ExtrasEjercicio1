@@ -46,7 +46,6 @@ public class CrearTarea extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaDescripcion = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
-        jDateChooser1 = new org.netbeans.modules.form.InvalidComponent();
         jTextRecibirFecha = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -113,7 +112,6 @@ public class CrearTarea extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Ingrese Fecha");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 110, 20));
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 120, 30));
 
         jTextRecibirFecha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jPanel1.add(jTextRecibirFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 110, 30));
@@ -235,13 +233,13 @@ public class CrearTarea extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextAreaDescripcionMouseClicked
 
     private void jDateChooser1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jDateChooser1PropertyChange
-        // TODO add your handling code here:
-        if (jDateChooser1.getDate() != null) {
-
-            LocalDate fechaN = jDateChooser1.getDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            jTextRecibirFecha.setText(fechaN.format(dtf));
-        }
+//        // TODO add your handling code here:
+//        if (jDateChooser1.getDate() != null) {
+//
+//            LocalDate fechaN = jDateChooser1.getDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+//            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//            jTextRecibirFecha.setText(fechaN.format(dtf));
+//        }
 
     }//GEN-LAST:event_jDateChooser1PropertyChange
 
@@ -316,7 +314,6 @@ public class CrearTarea extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private org.netbeans.modules.form.InvalidComponent jDateChooser1;
     private javax.swing.JLabel jLabeCrearTarea;
     private javax.swing.JLabel jLabeEliminarTarea;
     private javax.swing.JLabel jLabel1;
