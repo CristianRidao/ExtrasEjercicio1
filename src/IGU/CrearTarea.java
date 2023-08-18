@@ -119,7 +119,7 @@ public class CrearTarea extends javax.swing.JFrame {
                 jDateChooser1PropertyChange(evt);
             }
         });
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 120, 30));
+        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 420, 120, 30));
 
         jTextRecibirFecha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jPanel1.add(jTextRecibirFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 110, 30));
