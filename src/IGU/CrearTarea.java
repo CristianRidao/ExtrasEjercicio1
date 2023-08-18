@@ -46,7 +46,7 @@ public class CrearTarea extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaDescripcion = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser1 = new org.netbeans.modules.form.InvalidComponent();
         jTextRecibirFecha = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -113,16 +113,10 @@ public class CrearTarea extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Ingrese Fecha");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 110, 20));
-
-        jDateChooser1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jDateChooser1PropertyChange(evt);
-            }
-        });
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 420, 120, 30));
+        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 120, 30));
 
         jTextRecibirFecha.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jPanel1.add(jTextRecibirFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 110, 30));
+        jPanel1.add(jTextRecibirFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 110, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Hora Inicio Tarea");
@@ -179,7 +173,7 @@ public class CrearTarea extends javax.swing.JFrame {
                 jLabeEliminarTareaMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabeEliminarTarea, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 210, 50));
+        jPanel1.add(jLabeEliminarTarea, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 340, 210, 50));
 
         jTextHI.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jTextHI.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -322,7 +316,7 @@ public class CrearTarea extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private org.netbeans.modules.form.InvalidComponent jDateChooser1;
     private javax.swing.JLabel jLabeCrearTarea;
     private javax.swing.JLabel jLabeEliminarTarea;
     private javax.swing.JLabel jLabel1;
